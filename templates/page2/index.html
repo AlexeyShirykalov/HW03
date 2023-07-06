@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Заголовок страницы</title>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+  <h1>Страница с дублированным контентом</h1>
+  <p>{{ flatpage.content }}</p>
+  <p>{{ flatpage.content }}</p>
+</body>
+</html>
